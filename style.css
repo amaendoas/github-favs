@@ -45,7 +45,7 @@ a {
   color: var(--tc-primary);
 }
 
-.page {
+#page {
   margin: auto;
   width: clamp(55rem, 80rem + 10vw, 112rem);
   padding: 11.5rem 5rem;
@@ -69,6 +69,7 @@ header {
 }
 
 .search input {
+  color: var(--tc-secondary);
   padding: 1.6rem;
   border: none;
   width: clamp(15rem, 20rem + 10vw, 46.2rem);
