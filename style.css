@@ -15,7 +15,7 @@
   --bg-highlight-hover: hsl(195, 66%, 33%);
 
   --tc-primary: hsl(240, 9%, 89%);
-  --tc-secondary: hsl(240, 6%, 51%);
+  --tc-secondary: hsl(189, 4%, 32%);
   --tc-remove: hsl(355, 91%, 66%);
 }
 
@@ -152,6 +152,11 @@ table td {
   padding: 2.4rem 4rem;
 }
 
+table tr:last-child {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
 .user {
   display: flex;
   align-items: center;
@@ -172,4 +177,21 @@ table td {
   color: var(--tc-remove);
   font-weight: bold;
   cursor: pointer;
+}
+
+.no-fav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  height: 50vh;
+  width: 200%;
+  color: var(--tc-secondary);
+  font-weight: bold;
+  font-size: clamp(2rem, 2.5rem + 5vw, 2.7rem);
+}
+
+.no-fav svg {
+  width: clamp(8rem, 8rem + 10vw, 10rem);
+  height: auto;
 }
