@@ -46,9 +46,9 @@ a {
 }
 
 #page {
-  margin: auto;
+  margin: 0 auto;
   width: clamp(55rem, 80rem + 10vw, 112rem);
-  padding: 11.5rem 5rem;
+  padding: 11.5rem 5rem 0;
 }
 
 header {
@@ -194,4 +194,23 @@ table tr:last-child {
 .no-fav svg {
   width: clamp(8rem, 8rem + 10vw, 10rem);
   height: auto;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  width: 100%;
+  opacity: 75%;
+  margin: 2rem 0;
+}
+
+footer a {
+  font-weight: bold;
+  color: #8d65c5;
+  transition: 400ms;
+}
+
+footer a:hover {
+  color: var(--bg-highlight);
 }

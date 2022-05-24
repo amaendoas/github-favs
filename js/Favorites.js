@@ -1,8 +1,8 @@
 import { GithubUsers } from "./GithubUsers.js"
 
-// clase que vai conter a lógica dos dados
+// classe que vai conter a lógica dos dados
 // como os dados serão estruturados
-export class Favorities {
+export class Favorites {
   constructor(root) {
     this.root = document.querySelector(root)
     this.tbody = this.root.querySelector('table tbody')
@@ -32,7 +32,7 @@ export class Favorities {
 
   async add(username) {
     try {
-      const userExists = this.entries.find(entry => entry.login === username)
+      const userExists = this.entries.find(entry => entry.login == username)
       if (userExists) {
         throw new Error('Usuário já cadastrado')
       }
@@ -60,9 +60,9 @@ export class Favorities {
   }
 }
 
-//classe que vai criar a visualizção e eventos do HTML
+//classe que vai criar a visualização e eventos do HTML
 
-export class FavoritiesView extends Favorities {
+export class FavoritesView extends Favorites {
   constructor(root) {
     super(root)
 
